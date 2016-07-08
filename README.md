@@ -53,7 +53,12 @@ Available fonts are specified by name, as follows:
 The font (foreground) color can be set with the setFgcolor(int[]) method, before calling doRender() e.g.:
 
 ```
-  FontUtils fm = new FontUtils(); // RGB color components for font (foreground) color fgcolor[0] = 221; // #DDE0F4 (light gray) fgcolor[1] = 224; fgcolor[2] = 244; fm.setFgcolor(fgcolor);
+  FontUtils fm = new FontUtils(); 
+  // RGB color components for font (foreground) 
+  color fgcolor[0] = 221; // #DDE0F4 (light gray) 
+  fgcolor[1] = 224; 
+  fgcolor[2] = 244; 
+  fm.setFgcolor(fgcolor);
 ```
 
 ### Background Color/Gradient ###
@@ -61,7 +66,11 @@ The font (foreground) color can be set with the setFgcolor(int[]) method, before
 The background is specified as a gradient, an array of RGB color components using `setGradient(int[][])`. For example, to set a single color background, supply a one-row array (one pixel) as shown below:
 
 ```
- int[][] graybg = new int[1][3]; graybg[0][0] = 221; // #DDE0F4 (light gray) graybg[0][1] = 224; graybg[0][2] = 244; fm.setGradient(graybg);
+ int[][] graybg = new int[1][3]; 
+ graybg[0][0] = 221; // #DDE0F4 (light gray) 
+ graybg[0][1] = 224; 
+ graybg[0][2] = 244; 
+ fm.setGradient(graybg);
 ```
 
 To use a gradient, supply more rows (pixels), which basically represent a one-pixel wide vertical bar of pixels (rows of RGB values). E.g.:
@@ -168,7 +177,10 @@ Example glyph.97 (lower-case 'a' data) file:
 Hexdump of corresponding glyph_bmap.97 (bitmap for lower-case 'a'): 
 
 ```
-0000000 00 01 01 01 01 00 00 01 00 00 00 00 01 00 00 00 0000010 00 00 00 01 00 00 01 01 01 01 01 00 01 00 00 00 0000020 00 01 00 01 00 00 00 00 01 00 00 01 01 01 01 00 0000030 01 
+0000000 00 01 01 01 01 00 00 01 00 00 00 00 01 00 00 00 
+0000010 00 00 00 01 00 00 01 01 01 01 01 00 01 00 00 00 
+0000020 00 01 00 01 00 00 00 00 01 00 00 01 01 01 01 00 
+0000030 01 
 0000031
 ```
 
