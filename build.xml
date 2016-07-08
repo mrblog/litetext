@@ -1,4 +1,4 @@
-<project default="jar">
+<project name="litetext" default="jar">
 
     <target name="clean">
         <delete dir="build"/>
